@@ -3,7 +3,7 @@ const { getAllTasks, setTask, getTaskById, updateTask, deleteTask } = require('.
 const getTasks_controller = async (req, res) => {
   const tasks = await getAllTasks();
   // res.header("Access-Control-Allow-Origin", "*");
-  res.json(tasks);
+  res.send(tasks);
 }
 
 const getTask_controller = async (req, res) => {
